@@ -2,6 +2,8 @@
 
 
 //段码
+/*特殊断码补充: '-' 0x40 
+*/
 const uint8_t Seg_Table[] = {
     // 0-9
     0x3F, // 0 (a-b-c-d-e-f)
@@ -40,7 +42,7 @@ void HC595_SendByte(uint8_t data) {
 
 void Seg_disp(uint8_t digit, uint8_t position) {
     // 1. 发送段码到74HC595
-    HC595_SendByte(Seg_Table[digit]);
+    HC595_SendByte(digit);
 
     HAL_GPIO_WritePin(GPIOF, GPIO_PIN_15 >> (position-1), GPIO_PIN_RESET); // 打开位选
     delay_ms(1); // 短暂延时（防闪烁）
