@@ -19,6 +19,10 @@
 "demo2\stm32f1xx_hal_flash_ex.o"
 "demo2\stm32f1xx_hal_exti.o"
 "demo2\system_stm32f1xx.o"
+"demo2\seg.o"
+"demo2\led.o"
+"demo2\buzzer.o"
+"demo2\basic.o"
 --strict --scatter "demo2\demo2.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

@@ -23,7 +23,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "Init_hardware.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -43,7 +43,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+int pwm_duty = 10;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -54,7 +54,14 @@ void SystemClock_Config(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin){
+	if(GPIO_Pin == KB1_Pin){
+		delay_ms(3);
+		if(HAL_GPIO_ReadPin(KB1_GPIO_Port,KB1_Pin) == 0 )
+		pwm_duty = pwm_duty+20 ;
+		pwm_duty = pwm_duty % 100 ;
+	}
+}
 /* USER CODE END 0 */
 
 /**
@@ -99,14 +106,18 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		for(int i = 0 ; i<100 ; i++){
+		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,pwm_duty);
+		delay_ms(1);
+		/*
+		for(int i = 0 ; i<pwm_duty ; i++){
 			 __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,i);
 			HAL_Delay(10);
 		}
-		for(int i = 99 ; i>=0 ; i--){
+		for(int i = pwm_duty ; i>=0 ; i--){
 			 __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,i);
 			HAL_Delay(10);
 		}
+		*/
   }
   /* USER CODE END 3 */
 }

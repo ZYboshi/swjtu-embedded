@@ -1,4 +1,4 @@
-demo2/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
+demo2/led.o: Hardware\Led.c Hardware\Led.h ..\Core\Inc\main.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
   ..\Core\Inc\stm32f1xx_hal_conf.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc.h \
@@ -20,5 +20,4 @@ demo2/main.o: ..\Core\Src\main.c ..\Core\Inc\main.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h \
-  ..\Core\Inc\tim.h ..\Core\Inc\gpio.h Hardware\Init_hardware.h \
-  Hardware\basic.h Hardware\Buzzer.h Hardware\Led.h Hardware\Seg.h
+  ..\Core\Inc\gpio.h Hardware\basic.h
