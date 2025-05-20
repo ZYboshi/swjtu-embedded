@@ -82,7 +82,7 @@ void SystemClock_Config(void);
 /* USER CODE BEGIN 0 */
 
 void t_process(){
-	temp = DS18B20_Get_Temperature();
+	temp = DS18B20_Get_Temp();
 	temperture = temp / 10.0;
 }
 
@@ -173,7 +173,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			rgb_on = 1;
 			motor_on = 0;
 		}
-		else if(temperture >25.0){
+		else if(temperture >30.0){
 			buzzer_on = 1;
 			led1_on = 1;
 			rgb_on = 0 ;
@@ -230,9 +230,7 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-	while(DS18B20_Init()){
-		HAL_Delay(200);
-	}
+	DS18B20_Start();
   while (1)
   {
     /* USER CODE END WHILE */

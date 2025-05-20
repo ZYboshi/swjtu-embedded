@@ -1,7 +1,7 @@
 Dependencies for Project 'demo3', Target 'demo3': (DO NOT MODIFY !)
 CompilerVersion: 6230000::V6.23::ARMCLANG
 F (startup_stm32f103xe.s)(0x682AA023)(--target=arm-arm-none-eabi -mcpu=cortex-m3 -masm=auto  -Wa,armasm,--diag_suppress=A1950W -c-gdwarf-4-I./RTE/_demo3-ID:/IDLE/STM32/keil_v5/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-ID:/IDLE/STM32/keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-Wa,armasm,--pd,"__UVISION_VERSION SETA 542" -Wa,armasm,--pd,"STM32F10X_HD SETA 1" -Wa,armasm,--pd,"_RTE_ SETA 1"-o demo3/startup_stm32f103xe.o)
-F (../Core/Src/main.c)(0x682AAEB1)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ./Hardware-I./RTE/_demo3-ID:/IDLE/STM32/keil_v5/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-ID:/IDLE/STM32/keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o demo3/main.o -MMD)
+F (../Core/Src/main.c)(0x682C22D6)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ./Hardware-I./RTE/_demo3-ID:/IDLE/STM32/keil_v5/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-ID:/IDLE/STM32/keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o demo3/main.o -MMD)
 I (..\Core\Inc\main.h)(0x682AA021)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67FDC242)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x682AA021)
@@ -34,7 +34,7 @@ I (Hardware\basic.h)(0x682AA56E)
 I (Hardware\Buzzer.h)(0x6810C63C)
 I (Hardware\Led.h)(0x68186231)
 I (Hardware\Seg.h)(0x6810C329)
-I (Hardware\DS18B20.h)(0x682AA68B)
+I (Hardware\DS18B20.h)(0x682C21FB)
 F (../Core/Src/gpio.c)(0x682AA021)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ./Hardware-I./RTE/_demo3-ID:/IDLE/STM32/keil_v5/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-ID:/IDLE/STM32/keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o demo3/gpio.o -MMD)
 I (..\Core\Inc\gpio.h)(0x6829B206)
 I (..\Core\Inc\main.h)(0x682AA021)
@@ -664,9 +664,8 @@ F (.\Hardware\Buzzer.h)(0x6810C63C)()
 F (.\Hardware\Init_hardware.h)(0x682AA68B)()
 F (.\Hardware\Led.h)(0x68186231)()
 F (.\Hardware\Seg.h)(0x6810C329)()
-F (.\Hardware\DS18B20.c)(0x682AAE79)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ./Hardware-I./RTE/_demo3-ID:/IDLE/STM32/keil_v5/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-ID:/IDLE/STM32/keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o demo3/ds18b20.o -MMD)
-I (Hardware\DS18B20.h)(0x682AA68B)
-I (..\Core\Inc\tim.h)(0x682AAABD)
+F (.\Hardware\DS18B20.c)(0x682C2249)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m3 -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include -I ./Hardware-I./RTE/_demo3-ID:/IDLE/STM32/keil_v5/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include-ID:/IDLE/STM32/keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include-D__UVISION_VERSION="542" -DSTM32F10X_HD -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F103xE-o demo3/ds18b20.o -MMD)
+I (Hardware\DS18B20.h)(0x682C21FB)
 I (..\Core\Inc\main.h)(0x682AA021)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h)(0x67FDC242)
 I (..\Core\Inc\stm32f1xx_hal_conf.h)(0x682AA021)
@@ -691,5 +690,6 @@ I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_flash_ex.h)(0x67FDC242)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h)(0x67FDC242)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h)(0x67FDC242)
 I (..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h)(0x67FDC242)
+I (..\Core\Inc\tim.h)(0x682AAABD)
 I (..\Core\Inc\gpio.h)(0x6829B206)
-F (.\Hardware\DS18B20.h)(0x682AA68B)()
+F (.\Hardware\DS18B20.h)(0x682C21FB)()
