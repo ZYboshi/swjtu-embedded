@@ -5,7 +5,8 @@
 >
 >学习视频：[BLIBLI keysking](https://space.bilibili.com/6100925)
 >
->
+>**!!! 我用的是V6版本的编译器，编译出现复杂以及未知错误请务必更换成V6版本的编译器（除了TEST8）**
+![alt text](./assests/FIRST0.png)
 ## 目录
 | 实验名 | 工程名 | 完成情况 |
 |-------|-------|-------|

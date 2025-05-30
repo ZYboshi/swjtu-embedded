@@ -1,0 +1,15 @@
+ucosiii\os_task.o: ..\UCOSIII\uCOS-III\Source\os_task.c
+ucosiii\os_task.o: ..\UCOSIII\uCOS-III\Source\os.h
+ucosiii\os_task.o: ..\UCOSIII\uCOS-CONFIG\os_cfg.h
+ucosiii\os_task.o: ..\UCOSIII\uC-CPU\cpu_core.h
+ucosiii\os_task.o: ..\UCOSIII\uC-CPU\ARM-Cortex-M4\RealView\cpu.h
+ucosiii\os_task.o: ..\UCOSIII\uC-CPU\cpu_def.h
+ucosiii\os_task.o: ..\UCOSIII\uCOS-CONFIG\cpu_cfg.h
+ucosiii\os_task.o: ..\UCOSIII\uC-LIB\lib_def.h
+ucosiii\os_task.o: ..\UCOSIII\uC-LIB\lib_mem.h
+ucosiii\os_task.o: ..\UCOSIII\uC-CPU\cpu_core.h
+ucosiii\os_task.o: ..\UCOSIII\uCOS-CONFIG\lib_cfg.h
+ucosiii\os_task.o: ..\UCOSIII\uC-LIB\lib_str.h
+ucosiii\os_task.o: ..\UCOSIII\uC-LIB\lib_ascii.h
+ucosiii\os_task.o: ..\UCOSIII\uCOS-III\Source\os_type.h
+ucosiii\os_task.o: ..\UCOSIII\uCOS-III\Ports\ARM-Cortex-M4\Generic\RealView\os_cpu.h

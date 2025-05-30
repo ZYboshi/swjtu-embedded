@@ -1,0 +1,83 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 123 zyb, 123, LIC=ATTQ1-CBBQA-9U44U-SK19G-K1DVL-31PCF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.42.0.0
+Toolchain Path:  D:\IDLE\STM32\keil_v5\ARM\ARMCOMPLIER506\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.22.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+D:\school\3_2\embeded\test8\ex8_2\MDK-ARM\UCOSIII.uvprojx
+Project File Date:  05/26/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\IDLE\STM32\keil_v5\ARM\ARMCOMPLIER506\Bin'
+Build target 'UCOSIII'
+compiling main.c...
+../Src/main.c(378): warning:  #177-D: variable "cpu_sr"  was declared but never referenced
+  	CPU_SR_ALLOC();
+../Src/main.c(406): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,GPIO_PIN_7,(table[s[15-n]]>>(7-i))&0x01);
+../Src/main.c(407): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,1);
+../Src/main.c(408): warning:  #188-D: enumerated type mixed with another type
+  						HAL_GPIO_WritePin(GPIOA,GPIO_PIN_5,0);
+../Src/main.c(410): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,1);
+../Src/main.c(411): warning:  #188-D: enumerated type mixed with another type
+  					HAL_GPIO_WritePin(GPIOA,GPIO_PIN_8,0);
+../Src/main.c(412): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(GPIOF,0x01<<n,0);
+../Src/main.c(414): warning:  #188-D: enumerated type mixed with another type
+  			HAL_GPIO_WritePin(GPIOF,0x01<<n,1);
+../Src/main.c(398): warning:  #177-D: variable "cpu_sr"  was declared but never referenced
+  	CPU_SR_ALLOC();
+../Src/main.c(427): warning:  #177-D: variable "err"  was declared but never referenced
+  	OS_ERR err;
+../Src/main.c(429): warning:  #177-D: variable "cpu_sr"  was declared but never referenced
+  	CPU_SR_ALLOC();
+../Src/main.c(458): warning:  #188-D: enumerated type mixed with another type
+  				HAL_GPIO_WritePin(GPIOD,GPIO_PIN_13,1);
+../Src/main.c(452): warning:  #177-D: variable "i"  was declared but never referenced
+  		unsigned int i,j,k;
+../Src/main.c(452): warning:  #177-D: variable "j"  was declared but never referenced
+  		unsigned int i,j,k;
+../Src/main.c(452): warning:  #177-D: variable "k"  was declared but never referenced
+  		unsigned int i,j,k;
+../Src/main.c(455): warning:  #177-D: variable "cpu_sr"  was declared but never referenced
+  		CPU_SR_ALLOC();
+../Src/main.c: 16 warnings, 0 errors
+linking...
+Program Size: Code=14344 RO-data=660 RW-data=224 ZI-data=13288  
+FromELF: creating hex file...
+"UCOSIII\UCOSIII.axf" - 0 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil::STM32F1xx_DFP@2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/IDLE/STM32/keil_v5/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
